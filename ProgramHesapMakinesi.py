@@ -13,16 +13,22 @@ def HesapMakinesiMenu():
   sayi1=int(input("1.Sayiyi girin:"))
   sayi2=int(input("2.Sayiyi girin:"))
   islem=input("İşleminiz nedir?(+,-,*,/)")
+  def Toplama():
+       T=sayi1+sayi2
+       print(f"{T}")
+  def Cikarma():
+       C=sayi1-sayi2
+       print(f"{C}")
   if islem=="+":
-    toplamS = sayi1+sayi2
-    print(f"{sayi1} + {sayi2} = {toplamS}")
+     Toplama()
   if islem=="-":
-     çıkarmaS=sayi1-sayi2
-     print(f"{sayi1} - {sayi2} = {çıkarmaS}") 
+     Cikarma() 
   if islem=="*":
      carpmaS=sayi1*sayi2
      print(f"{sayi1} * {sayi2} = {carpmaS}") 
   if islem=="/":
      bolmeS=sayi1/sayi2
      print(f"{sayi1} / {sayi2} = {bolmeS}")
+
+
  
